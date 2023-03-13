@@ -31,6 +31,9 @@ print(onenamedsum(2,num2: 8));
 print(onenamedsum(2));
 
 print(shortdefault(7));
+print(shortdefault(5,num2:10));
+
+print(posargoptsum(89));
 
 
 }
@@ -64,3 +67,5 @@ dynamic onenamedsum(var num1, {var num2}) => num1 + (num2 ?? 0);
 
 // This function is shortcut version of assigning default value of 0 to num2 instead of using the ?? operator as done above
 dynamic shortdefault(var num1,{var num2=0}) => num1 + num2;
+
+dynamic posargoptsum(var num1, [var num2]) => num1 + (num2 ?? 0);
